@@ -1,5 +1,5 @@
 pipeline {
-   agent { docker { image 'maven:3.5-alpine' } }
+   agent ANY
 
    options {
       buildDiscarder(logRotator(numToKeepStr:'10'))
